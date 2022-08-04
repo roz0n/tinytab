@@ -30,7 +30,9 @@ final class LoginViewController: UIViewController {
   private func presentLoginSheet() {
     let formController = LoginFormController()
     let navigationController = UINavigationController(rootViewController: formController)
+    
     navigationController.modalPresentationStyle = .pageSheet
+    navigationController.isModalInPresentation = true
     
     if let sheet = navigationController.sheetPresentationController {
       sheet.detents = [.medium()]
