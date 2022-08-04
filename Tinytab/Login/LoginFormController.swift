@@ -25,6 +25,7 @@ class LoginFormController: UIViewController {
     field.translatesAutoresizingMaskIntoConstraints = false
     field.placeholder = "Username"
     field.backgroundColor = .systemPurple
+    field.heightAnchor.constraint(equalToConstant: 56).isActive = true
     return field
   }()
   
@@ -33,12 +34,14 @@ class LoginFormController: UIViewController {
     field.translatesAutoresizingMaskIntoConstraints = false
     field.placeholder = "Password"
     field.backgroundColor = .systemIndigo
+    field.heightAnchor.constraint(equalToConstant: 56).isActive = true
     return field
   }()
   
   let loginButton: UIButton = {
     let button = UIButton(type: .roundedRect)
     button.setTitle("Sign in", for: .normal)
+    button.heightAnchor.constraint(equalToConstant: 56).isActive = true
     return button
   }()
   
@@ -48,7 +51,6 @@ class LoginFormController: UIViewController {
     stack.axis = .vertical
     stack.alignment = .fill
     stack.spacing = 16
-    stack.backgroundColor = .systemPink
     return stack
   }()
   
@@ -99,8 +101,8 @@ extension LoginFormController {
     
     NSLayoutConstraint.activate([
       headerLabel.topAnchor.constraint(equalTo: view.topAnchor, constant: 24),
-      headerLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 24),
-      headerLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -24),
+      headerLabel.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 24),
+      headerLabel.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -24),
     ])
   }
   
@@ -113,8 +115,8 @@ extension LoginFormController {
     
     NSLayoutConstraint.activate([
       container.topAnchor.constraint(equalTo: headerLabel.bottomAnchor, constant: 24),
-      container.leadingAnchor.constraint(equalTo: headerLabel.leadingAnchor),
-      container.trailingAnchor.constraint(equalTo: headerLabel.trailingAnchor),
+      container.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 24),
+      container.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -24),
     ])
   }
   
