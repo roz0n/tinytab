@@ -15,7 +15,7 @@
 		2354918D289B7E8D0038A305 /* HomeMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2354918C289B7E8D0038A305 /* HomeMenuController.swift */; };
 		23549195289B86050038A305 /* LoginFormController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23549194289B86050038A305 /* LoginFormController.swift */; };
 		23549197289B8A5C0038A305 /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23549196289B8A5C0038A305 /* UIColor+Ext.swift */; };
-		2354919E289B8E3B0038A305 /* TinyAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2354919D289B8E3B0038A305 /* TinyAPIManager.swift */; };
+		2354919E289B8E3B0038A305 /* TinyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2354919D289B8E3B0038A305 /* TinyManager.swift */; };
 		235491A2289B8FE50038A305 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235491A1289B8FE50038A305 /* LoginResponse.swift */; };
 		235491A7289BA4B20038A305 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235491A6289BA4B20038A305 /* User.swift */; };
 		235491AA289BA81E0038A305 /* HomeMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2354918C289B7E8D0038A305 /* HomeMenuController.swift */; };
@@ -26,7 +26,7 @@
 		235491AF289BA81E0038A305 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235491A6289BA4B20038A305 /* User.swift */; };
 		235491B0289BA81E0038A305 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23549176289B7D190038A305 /* AppDelegate.swift */; };
 		235491B1289BA81E0038A305 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23549178289B7D190038A305 /* SceneDelegate.swift */; };
-		235491B2289BA81E0038A305 /* TinyAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2354919D289B8E3B0038A305 /* TinyAPIManager.swift */; };
+		235491B2289BA81E0038A305 /* TinyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2354919D289B8E3B0038A305 /* TinyManager.swift */; };
 		235491B5289BA81E0038A305 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23549181289B7D190038A305 /* LaunchScreen.storyboard */; };
 		235491B6289BA81E0038A305 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2354917F289B7D190038A305 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -42,7 +42,7 @@
 		2354918C289B7E8D0038A305 /* HomeMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMenuController.swift; sourceTree = "<group>"; };
 		23549194289B86050038A305 /* LoginFormController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFormController.swift; sourceTree = "<group>"; };
 		23549196289B8A5C0038A305 /* UIColor+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
-		2354919D289B8E3B0038A305 /* TinyAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinyAPIManager.swift; sourceTree = "<group>"; };
+		2354919D289B8E3B0038A305 /* TinyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinyManager.swift; sourceTree = "<group>"; };
 		235491A1289B8FE50038A305 /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
 		235491A6289BA4B20038A305 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		235491BA289BA81E0038A305 /* Tinytab Dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tinytab Dev.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -122,7 +122,7 @@
 		2354919C289B8D320038A305 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
-				2354919D289B8E3B0038A305 /* TinyAPIManager.swift */,
+				2354919D289B8E3B0038A305 /* TinyManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -249,7 +249,7 @@
 				235491A7289BA4B20038A305 /* User.swift in Sources */,
 				23549177289B7D190038A305 /* AppDelegate.swift in Sources */,
 				23549179289B7D190038A305 /* SceneDelegate.swift in Sources */,
-				2354919E289B8E3B0038A305 /* TinyAPIManager.swift in Sources */,
+				2354919E289B8E3B0038A305 /* TinyManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,7 +265,7 @@
 				235491AF289BA81E0038A305 /* User.swift in Sources */,
 				235491B0289BA81E0038A305 /* AppDelegate.swift in Sources */,
 				235491B1289BA81E0038A305 /* SceneDelegate.swift in Sources */,
-				235491B2289BA81E0038A305 /* TinyAPIManager.swift in Sources */,
+				235491B2289BA81E0038A305 /* TinyManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

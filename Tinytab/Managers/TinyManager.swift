@@ -1,5 +1,5 @@
 //
-//  TinyAPIManager.swift
+//  TinyManager.swift
 //  Tinytab
 //
 //  Created by Arnaldo Rozon on 8/3/22.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-final class TinyAPIManager {
+final class TinyManager {
   
   enum TinyAPIError: Error {
     case invalidCredentials
