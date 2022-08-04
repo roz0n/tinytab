@@ -33,6 +33,8 @@
 		23E3B6B1289C4F64005B9D74 /* LoginTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E3B6AF289C4F64005B9D74 /* LoginTextField.swift */; };
 		23E3B6B3289C53C6005B9D74 /* UIApplication+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E3B6B2289C53C6005B9D74 /* UIApplication+Ext.swift */; };
 		23E3B6B4289C53C6005B9D74 /* UIApplication+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E3B6B2289C53C6005B9D74 /* UIApplication+Ext.swift */; };
+		23E3B6BC289C69EE005B9D74 /* HomeTableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E3B6BB289C69EE005B9D74 /* HomeTableDataSource.swift */; };
+		23E3B6BD289C69EE005B9D74 /* HomeTableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E3B6BB289C69EE005B9D74 /* HomeTableDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +55,7 @@
 		235491BB289BA81E0038A305 /* Tinytab Dev-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Tinytab Dev-Info.plist"; path = "/Users/arnaldo/Development/ios/projects/square-hack-22/Tinytab/Tinytab Dev-Info.plist"; sourceTree = "<absolute>"; };
 		23E3B6AF289C4F64005B9D74 /* LoginTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTextField.swift; sourceTree = "<group>"; };
 		23E3B6B2289C53C6005B9D74 /* UIApplication+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Ext.swift"; sourceTree = "<group>"; };
+		23E3B6BB289C69EE005B9D74 /* HomeTableDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +141,7 @@
 		2354919F289B8F960038A305 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				23E3B6B6289C695E005B9D74 /* Sources */,
 				2354918C289B7E8D0038A305 /* HomeViewController.swift */,
 			);
 			path = Home;
@@ -158,6 +162,14 @@
 				23E3B6AF289C4F64005B9D74 /* LoginTextField.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		23E3B6B6289C695E005B9D74 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				23E3B6BB289C69EE005B9D74 /* HomeTableDataSource.swift */,
+			);
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +269,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23E3B6BC289C69EE005B9D74 /* HomeTableDataSource.swift in Sources */,
 				2354918D289B7E8D0038A305 /* HomeViewController.swift in Sources */,
 				2354918B289B7D8C0038A305 /* LoginViewController.swift in Sources */,
 				235491A2289B8FE50038A305 /* LoginResponse.swift in Sources */,
@@ -275,6 +288,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23E3B6BD289C69EE005B9D74 /* HomeTableDataSource.swift in Sources */,
 				235491AA289BA81E0038A305 /* HomeViewController.swift in Sources */,
 				235491AB289BA81E0038A305 /* LoginViewController.swift in Sources */,
 				235491AC289BA81E0038A305 /* LoginResponse.swift in Sources */,

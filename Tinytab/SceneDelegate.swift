@@ -64,8 +64,8 @@ extension SceneDelegate {
     window.rootViewController = viewController
     
     UIView.transition(with: window,
-                      duration: 0.25,
-                      options: [.transitionFlipFromRight],
+                      duration: 0.5,
+                      options: [.transitionCurlUp],
                       animations: nil,
                       completion: nil)
   }
