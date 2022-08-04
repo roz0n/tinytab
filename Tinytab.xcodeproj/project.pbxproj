@@ -29,6 +29,8 @@
 		235491B2289BA81E0038A305 /* TinyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2354919D289B8E3B0038A305 /* TinyManager.swift */; };
 		235491B5289BA81E0038A305 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23549181289B7D190038A305 /* LaunchScreen.storyboard */; };
 		235491B6289BA81E0038A305 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2354917F289B7D190038A305 /* Assets.xcassets */; };
+		23E3B6B0289C4F64005B9D74 /* LoginTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E3B6AF289C4F64005B9D74 /* LoginTextField.swift */; };
+		23E3B6B1289C4F64005B9D74 /* LoginTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E3B6AF289C4F64005B9D74 /* LoginTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +49,7 @@
 		235491A6289BA4B20038A305 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		235491BA289BA81E0038A305 /* Tinytab Dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tinytab Dev.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		235491BB289BA81E0038A305 /* Tinytab Dev-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Tinytab Dev-Info.plist"; path = "/Users/arnaldo/Development/ios/projects/square-hack-22/Tinytab/Tinytab Dev-Info.plist"; sourceTree = "<absolute>"; };
+		23E3B6AF289C4F64005B9D74 /* LoginTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +108,7 @@
 		23549191289B854B0038A305 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				23E3B6AE289C4F50005B9D74 /* Views */,
 				2354918A289B7D8C0038A305 /* LoginViewController.swift */,
 				23549194289B86050038A305 /* LoginFormController.swift */,
 			);
@@ -142,6 +146,14 @@
 				235491A1289B8FE50038A305 /* LoginResponse.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		23E3B6AE289C4F50005B9D74 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				23E3B6AF289C4F64005B9D74 /* LoginTextField.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,6 +262,7 @@
 				23549177289B7D190038A305 /* AppDelegate.swift in Sources */,
 				23549179289B7D190038A305 /* SceneDelegate.swift in Sources */,
 				2354919E289B8E3B0038A305 /* TinyManager.swift in Sources */,
+				23E3B6B0289C4F64005B9D74 /* LoginTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +279,7 @@
 				235491B0289BA81E0038A305 /* AppDelegate.swift in Sources */,
 				235491B1289BA81E0038A305 /* SceneDelegate.swift in Sources */,
 				235491B2289BA81E0038A305 /* TinyManager.swift in Sources */,
+				23E3B6B1289C4F64005B9D74 /* LoginTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

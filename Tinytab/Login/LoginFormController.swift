@@ -9,8 +9,6 @@ import UIKit
 
 class LoginFormController: UIViewController {
   
-  let apiManager: TinyManager
-  
   let headerLabel: UILabel = {
     let label = UILabel()
     label.translatesAutoresizingMaskIntoConstraints = false
@@ -20,21 +18,22 @@ class LoginFormController: UIViewController {
     return label
   }()
   
-  let usernameField: UITextField = {
-    let field = UITextField()
+  let usernameField: LoginTextField = {
+    let field = LoginTextField()
     field.translatesAutoresizingMaskIntoConstraints = false
     field.placeholder = "Username"
-    field.backgroundColor = .systemPurple
     field.heightAnchor.constraint(equalToConstant: 56).isActive = true
+    field.keyboardType = .emailAddress
     return field
   }()
   
-  let passwordField: UITextField = {
-    let field = UITextField()
+  let passwordField: LoginTextField = {
+    let field = LoginTextField()
     field.translatesAutoresizingMaskIntoConstraints = false
     field.placeholder = "Password"
-    field.backgroundColor = .systemIndigo
     field.heightAnchor.constraint(equalToConstant: 56).isActive = true
+    field.keyboardType = .alphabet
+    field.isSecureTextEntry = true
     return field
   }()
   
@@ -42,6 +41,12 @@ class LoginFormController: UIViewController {
     let button = UIButton(type: .roundedRect)
     button.setTitle("Sign in", for: .normal)
     button.heightAnchor.constraint(equalToConstant: 56).isActive = true
+    button.backgroundColor = .systemMint
+    button.layer.cornerRadius = 14
+    button.layer.masksToBounds = true
+    button.tintColor = .white
+    button.titleLabel?.font = UIFont.systemFont(ofSize: 18, weight: .semibold)
+    button.titleLabel?.tintColor = .secondaryBodyText
     return button
   }()
   
@@ -54,44 +59,25 @@ class LoginFormController: UIViewController {
     return stack
   }()
   
-  convenience init() {
-    self.init(TinyManager())
-  }
-  
-  init(_ apiManager: TinyManager) {
-    self.apiManager = apiManager
-    super.init(nibName: nil, bundle: nil)
-    applyLayout()
-  }
-  
-  required init?(coder: NSCoder) {
-    fatalError("init(coder:) has not been implemented")
-  }
-  
   override func viewDidLoad() {
     super.viewDidLoad()
+    setup()
+  }
+  
+  private func setup() {
+    configureView()
+    applyLayouts()
+  }
+  
+  private func configureView() {
     view.backgroundColor = .primaryForeground
-    navigationController?.navigationBar.tintColor = .primaryBodyText
-    
-    let mockUser = User(username: "arnaldo", password: "666")
-    
-    apiManager.loginUser(mockUser) { result in
-      switch result {
-        case .success(let response):
-          print("Response:")
-          print(response)
-        case .failure(let error):
-          print("Error:")
-          print(error)
-      }
-    }
   }
   
 }
 
 extension LoginFormController {
   
-  func applyLayout() {
+  func applyLayouts() {
     layoutHeaderLabel()
     layoutContainer()
   }

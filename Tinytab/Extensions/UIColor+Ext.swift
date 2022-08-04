@@ -12,5 +12,6 @@ import UIKit
   static var primaryBackground = UIColor(named: "PrimaryBackground")!
   static var primaryForeground = UIColor(named: "PrimaryForeground")!
   static var primaryBodyText = UIColor(named: "PrimaryBodyText")!
+  static var secondaryBodyText = UIColor(named: "SecondaryBodyText")!
 
 }
