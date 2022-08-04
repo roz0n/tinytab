@@ -41,7 +41,7 @@ class LoginFormController: UIViewController {
     let button = UIButton(type: .roundedRect)
     button.setTitle("Sign in", for: .normal)
     button.heightAnchor.constraint(equalToConstant: 56).isActive = true
-    button.backgroundColor = .systemMint
+    button.backgroundColor = .accentColor
     button.layer.cornerRadius = 14
     button.layer.masksToBounds = true
     button.tintColor = .white

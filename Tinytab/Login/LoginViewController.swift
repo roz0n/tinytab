@@ -69,11 +69,14 @@ final class LoginViewController: UIViewController {
     
     apiManager.loginUser(user) { result in
       switch result {
-        case .success(let response):
-          print("Response:")
-          print(response)
-          // Bounce back to root vc
-          //
+        case .success(_):
+          DispatchQueue.main.async {
+            guard let sceneDelegate = UIApplication.shared.sceneDelegate else {
+              fatalError("Failed to obtain scene delegate")
+            }
+            
+            sceneDelegate.swapRootViewController(for: HomeViewController())
+          }
         case .failure(let error):
           print("Error:")
           print(error)

@@ -9,6 +9,7 @@ import UIKit
 
 @nonobjc extension UIColor {
   
+  static var accentColor = UIColor(named: "AccentColor")!
   static var primaryBackground = UIColor(named: "PrimaryBackground")!
   static var primaryForeground = UIColor(named: "PrimaryForeground")!
   static var primaryBodyText = UIColor(named: "PrimaryBodyText")!
