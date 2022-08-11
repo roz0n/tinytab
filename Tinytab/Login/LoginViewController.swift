@@ -75,7 +75,21 @@ final class LoginViewController: UIViewController {
               fatalError("Failed to obtain scene delegate")
             }
             
-            sceneDelegate.swapRootViewController(for: HomeViewController())
+            let homeController = HomeViewController()
+            homeController.navigationItem.title = "tinytab"
+            homeController.tabBarItem = UITabBarItem(title: "Home", image: UIImage(systemName: "house.fill"), tag: 0)
+            let homeNavigationController = UINavigationController(rootViewController: homeController)
+            
+            let settingsController = UIViewController()
+            settingsController.navigationItem.title = "Settings"
+            settingsController.tabBarItem = UITabBarItem(title: "Settings", image: UIImage(systemName: "gear"), tag: 1)
+            let settingsNavigationController = UINavigationController(rootViewController: settingsController)
+            
+            let tabController = UITabBarController()
+            tabController.viewControllers = [homeNavigationController,
+                                             settingsNavigationController]
+            
+            sceneDelegate.swapRootViewController(for: tabController)
           }
         case .failure(let error):
           print("Error:")
