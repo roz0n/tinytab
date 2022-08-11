@@ -10,7 +10,9 @@ import WatchConnectivity
 
 final class WatchConnectivityManager: NSObject, ObservableObject {
   
-  @Published var isLoggedIn: Bool = false
+  @Published var isWatchSessionActive: Bool = false
+  @Published var receivedTextWatch: String?
+  @Published var receivedTextPhone: String?
   
   override init() {
     super.init()
@@ -29,13 +31,36 @@ final class WatchConnectivityManager: NSObject, ObservableObject {
 
 extension WatchConnectivityManager: WCSessionDelegate {
   
+  // MARK: - Networking
+  
+  func transferUserInfo(_ userInfo: [String: Any]) {
+    let session = WCSession.default
+    
+    if session.activationState == .activated {
+      session.transferUserInfo(userInfo)
+    }
+  }
+  
+  // WARNING: This only works on a physical device
+  func session(_ session: WCSession, didReceiveUserInfo userInfo: [String : Any] = [:]) {
+    DispatchQueue.main.async { [weak self] in
+      if let watchMessageText = userInfo["watch"] as? String {
+        self?.receivedTextWatch = watchMessageText
+      } else if let phoneMessageText = userInfo["phone"] as? String {
+        self?.receivedTextPhone = phoneMessageText
+      }
+    }
+  }
+  
+  // MARK: - Session
+  
 #if os(iOS)
   func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
     DispatchQueue.main.async {
       if activationState == .activated {
         if session.isWatchAppInstalled {
           print("[iOS] Watch app session successful")
-          self.isLoggedIn = true
+          self.isWatchSessionActive = true
         }
       }
     }
@@ -44,14 +69,14 @@ extension WatchConnectivityManager: WCSessionDelegate {
   func sessionDidBecomeInactive(_ session: WCSession) {
     DispatchQueue.main.async {
       print("[iOS] Watch connection session is inactive")
-      self.isLoggedIn = false
+      self.isWatchSessionActive = false
     }
   }
   
   func sessionDidDeactivate(_ session: WCSession) {
     DispatchQueue.main.async {
       print("[iOS] Watch session deactivated")
-      self.isLoggedIn = false
+      self.isWatchSessionActive = false
     }
   }
 #else
@@ -59,7 +84,7 @@ extension WatchConnectivityManager: WCSessionDelegate {
     DispatchQueue.main.async {
       if activationState == .activated {
         print("[watchOS] iPhone found and session is active")
-        self.isLoggedIn = true
+        self.isWatchSessionActive = true
       }
     }
   }
