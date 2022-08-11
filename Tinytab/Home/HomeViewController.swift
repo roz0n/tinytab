@@ -10,9 +10,10 @@ import EFQRCode
 
 class HomeViewController: UIViewController {
   
-  let qrSize: CGFloat = UIScreen.main.bounds.width / .infinity
-  var dataSource: HomeTableDataSource
+  let qrSize: CGFloat = UIScreen.main.bounds.width / 2
   
+  var dataSource: HomeTableDataSource
+    
   var tableView: UITableView = {
     let table = UITableView(frame: .zero, style: .insetGrouped)
     table.translatesAutoresizingMaskIntoConstraints = false

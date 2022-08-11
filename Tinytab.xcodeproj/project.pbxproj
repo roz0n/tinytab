@@ -38,7 +38,68 @@
 		23FCA3D828A4CF2800123C2C /* EFQRCode in Frameworks */ = {isa = PBXBuildFile; productRef = 23FCA3D728A4CF2800123C2C /* EFQRCode */; };
 		23FCA3DB28A4D2F200123C2C /* EFQRCode in Frameworks */ = {isa = PBXBuildFile; productRef = 23FCA3DA28A4D2F200123C2C /* EFQRCode */; };
 		23FCA3DE28A4D39300123C2C /* EFQRCode in Frameworks */ = {isa = PBXBuildFile; productRef = 23FCA3DD28A4D39300123C2C /* EFQRCode */; };
+		23FCA3E428A4DB7A00123C2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23FCA3E328A4DB7A00123C2C /* Assets.xcassets */; };
+		23FCA3EA28A4DB7A00123C2C /* Tinytab Watch Dev WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 23FCA3E928A4DB7A00123C2C /* Tinytab Watch Dev WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		23FCA3F128A4DB7A00123C2C /* TinytabApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FCA3F028A4DB7A00123C2C /* TinytabApp.swift */; };
+		23FCA3F328A4DB7A00123C2C /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FCA3F228A4DB7A00123C2C /* ComplicationController.swift */; };
+		23FCA3F528A4DB7B00123C2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23FCA3F428A4DB7B00123C2C /* Assets.xcassets */; };
+		23FCA3F828A4DB7B00123C2C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23FCA3F728A4DB7B00123C2C /* Preview Assets.xcassets */; };
+		23FCA3FC28A4DB7B00123C2C /* Tinytab Watch Dev.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 23FCA3E128A4DB7900123C2C /* Tinytab Watch Dev.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		23FCA40E28A4DC5800123C2C /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FCA40628A4DC5800123C2C /* LandingView.swift */; };
+		23FCA40F28A4DC5800123C2C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FCA40828A4DC5800123C2C /* HomeView.swift */; };
+		23FCA41028A4DC5800123C2C /* TabsDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FCA40A28A4DC5800123C2C /* TabsDetail.swift */; };
+		23FCA41128A4DC5800123C2C /* TabsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FCA40B28A4DC5800123C2C /* TabsView.swift */; };
+		23FCA41228A4DC5800123C2C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FCA40D28A4DC5800123C2C /* Constants.swift */; };
+		23FCA41428A4DD7300123C2C /* EFQRCode in Frameworks */ = {isa = PBXBuildFile; productRef = 23FCA41328A4DD7300123C2C /* EFQRCode */; };
+		23FCA41928A4DE3200123C2C /* PaymentCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FCA41828A4DE3200123C2C /* PaymentCodeView.swift */; };
+		23FCA41C28A4E24B00123C2C /* WatchConnectivityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FCA41B28A4E24B00123C2C /* WatchConnectivityManager.swift */; };
+		23FCA41D28A4E66500123C2C /* WatchConnectivityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FCA41B28A4E24B00123C2C /* WatchConnectivityManager.swift */; };
+		23FCA41E28A4E66A00123C2C /* WatchConnectivityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FCA41B28A4E24B00123C2C /* WatchConnectivityManager.swift */; };
+		23FCA9AF28A4FC8400AC006A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FCA9AE28A4FC8400AC006A /* HomeView.swift */; };
+		23FCA9B028A4FCD500AC006A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FCA9AE28A4FC8400AC006A /* HomeView.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		23FCA3EB28A4DB7A00123C2C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2354916B289B7D190038A305 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 23FCA3E828A4DB7A00123C2C;
+			remoteInfo = "Tinytab Watch Dev WatchKit Extension";
+		};
+		23FCA3FA28A4DB7B00123C2C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2354916B289B7D190038A305 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 23FCA3E028A4DB7900123C2C;
+			remoteInfo = "Tinytab Watch Dev";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		23FCA40028A4DB7B00123C2C /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				23FCA3EA28A4DB7A00123C2C /* Tinytab Watch Dev WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23FCA40428A4DB7B00123C2C /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				23FCA3FC28A4DB7B00123C2C /* Tinytab Watch Dev.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		23549173289B7D190038A305 /* Tinytab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tinytab.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -59,6 +120,22 @@
 		23E3B6AF289C4F64005B9D74 /* LoginTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTextField.swift; sourceTree = "<group>"; };
 		23E3B6B2289C53C6005B9D74 /* UIApplication+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Ext.swift"; sourceTree = "<group>"; };
 		23E3B6BB289C69EE005B9D74 /* HomeTableDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableDataSource.swift; sourceTree = "<group>"; };
+		23FCA3E128A4DB7900123C2C /* Tinytab Watch Dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tinytab Watch Dev.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		23FCA3E328A4DB7A00123C2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		23FCA3E928A4DB7A00123C2C /* Tinytab Watch Dev WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Tinytab Watch Dev WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		23FCA3F028A4DB7A00123C2C /* TinytabApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinytabApp.swift; sourceTree = "<group>"; };
+		23FCA3F228A4DB7A00123C2C /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		23FCA3F428A4DB7B00123C2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		23FCA3F728A4DB7B00123C2C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		23FCA3F928A4DB7B00123C2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23FCA40628A4DC5800123C2C /* LandingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
+		23FCA40828A4DC5800123C2C /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		23FCA40A28A4DC5800123C2C /* TabsDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabsDetail.swift; sourceTree = "<group>"; };
+		23FCA40B28A4DC5800123C2C /* TabsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabsView.swift; sourceTree = "<group>"; };
+		23FCA40D28A4DC5800123C2C /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		23FCA41828A4DE3200123C2C /* PaymentCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentCodeView.swift; sourceTree = "<group>"; };
+		23FCA41B28A4E24B00123C2C /* WatchConnectivityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchConnectivityManager.swift; sourceTree = "<group>"; };
+		23FCA9AE28A4FC8400AC006A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +156,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		23FCA3E628A4DB7A00123C2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23FCA41428A4DD7300123C2C /* EFQRCode in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -86,6 +171,8 @@
 			isa = PBXGroup;
 			children = (
 				23549175289B7D190038A305 /* Tinytab */,
+				23FCA3E228A4DB7900123C2C /* Tinytab Watch Dev */,
+				23FCA3ED28A4DB7A00123C2C /* Tinytab Watch Dev WatchKit Extension */,
 				23549174289B7D190038A305 /* Products */,
 				235491BB289BA81E0038A305 /* Tinytab Dev-Info.plist */,
 				23FCA3DC28A4D39300123C2C /* Frameworks */,
@@ -97,6 +184,8 @@
 			children = (
 				23549173289B7D190038A305 /* Tinytab.app */,
 				235491BA289BA81E0038A305 /* Tinytab Dev.app */,
+				23FCA3E128A4DB7900123C2C /* Tinytab Watch Dev.app */,
+				23FCA3E928A4DB7A00123C2C /* Tinytab Watch Dev WatchKit Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -141,6 +230,7 @@
 			isa = PBXGroup;
 			children = (
 				2354919D289B8E3B0038A305 /* TinyManager.swift */,
+				23FCA41B28A4E24B00123C2C /* WatchConnectivityManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -150,6 +240,7 @@
 			children = (
 				23E3B6B6289C695E005B9D74 /* Sources */,
 				2354918C289B7E8D0038A305 /* HomeViewController.swift */,
+				23FCA9AE28A4FC8400AC006A /* HomeView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -186,6 +277,80 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		23FCA3E228A4DB7900123C2C /* Tinytab Watch Dev */ = {
+			isa = PBXGroup;
+			children = (
+				23FCA3E328A4DB7A00123C2C /* Assets.xcassets */,
+			);
+			path = "Tinytab Watch Dev";
+			sourceTree = "<group>";
+		};
+		23FCA3ED28A4DB7A00123C2C /* Tinytab Watch Dev WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				23FCA41528A4DDEF00123C2C /* Payment */,
+				23FCA40728A4DC5800123C2C /* Home */,
+				23FCA40528A4DC5800123C2C /* Landing */,
+				23FCA40928A4DC5800123C2C /* Tabs */,
+				23FCA40C28A4DC5800123C2C /* Utilities */,
+				23FCA3F028A4DB7A00123C2C /* TinytabApp.swift */,
+				23FCA3F228A4DB7A00123C2C /* ComplicationController.swift */,
+				23FCA3F428A4DB7B00123C2C /* Assets.xcassets */,
+				23FCA3F928A4DB7B00123C2C /* Info.plist */,
+				23FCA3F628A4DB7B00123C2C /* Preview Content */,
+			);
+			path = "Tinytab Watch Dev WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		23FCA3F628A4DB7B00123C2C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				23FCA3F728A4DB7B00123C2C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		23FCA40528A4DC5800123C2C /* Landing */ = {
+			isa = PBXGroup;
+			children = (
+				23FCA40628A4DC5800123C2C /* LandingView.swift */,
+			);
+			path = Landing;
+			sourceTree = "<group>";
+		};
+		23FCA40728A4DC5800123C2C /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				23FCA40828A4DC5800123C2C /* HomeView.swift */,
+				23FCA41828A4DE3200123C2C /* PaymentCodeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		23FCA40928A4DC5800123C2C /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				23FCA40A28A4DC5800123C2C /* TabsDetail.swift */,
+				23FCA40B28A4DC5800123C2C /* TabsView.swift */,
+			);
+			path = Tabs;
+			sourceTree = "<group>";
+		};
+		23FCA40C28A4DC5800123C2C /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				23FCA40D28A4DC5800123C2C /* Constants.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		23FCA41528A4DDEF00123C2C /* Payment */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Payment;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -217,10 +382,12 @@
 				235491A9289BA81E0038A305 /* Sources */,
 				235491B3289BA81E0038A305 /* Frameworks */,
 				235491B4289BA81E0038A305 /* Resources */,
+				23FCA40428A4DB7B00123C2C /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				23FCA3FB28A4DB7B00123C2C /* PBXTargetDependency */,
 			);
 			name = "Tinytab Dev";
 			packageProductDependencies = (
@@ -229,6 +396,43 @@
 			productName = Tinytab;
 			productReference = 235491BA289BA81E0038A305 /* Tinytab Dev.app */;
 			productType = "com.apple.product-type.application";
+		};
+		23FCA3E028A4DB7900123C2C /* Tinytab Watch Dev */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23FCA40128A4DB7B00123C2C /* Build configuration list for PBXNativeTarget "Tinytab Watch Dev" */;
+			buildPhases = (
+				23FCA3DF28A4DB7900123C2C /* Resources */,
+				23FCA40028A4DB7B00123C2C /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				23FCA3EC28A4DB7A00123C2C /* PBXTargetDependency */,
+			);
+			name = "Tinytab Watch Dev";
+			productName = "Tinytab Watch Dev";
+			productReference = 23FCA3E128A4DB7900123C2C /* Tinytab Watch Dev.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		23FCA3E828A4DB7A00123C2C /* Tinytab Watch Dev WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23FCA3FD28A4DB7B00123C2C /* Build configuration list for PBXNativeTarget "Tinytab Watch Dev WatchKit Extension" */;
+			buildPhases = (
+				23FCA3E528A4DB7A00123C2C /* Sources */,
+				23FCA3E628A4DB7A00123C2C /* Frameworks */,
+				23FCA3E728A4DB7A00123C2C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Tinytab Watch Dev WatchKit Extension";
+			packageProductDependencies = (
+				23FCA41328A4DD7300123C2C /* EFQRCode */,
+			);
+			productName = "Tinytab Watch Dev WatchKit Extension";
+			productReference = 23FCA3E928A4DB7A00123C2C /* Tinytab Watch Dev WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -241,6 +445,12 @@
 				LastUpgradeCheck = 1340;
 				TargetAttributes = {
 					23549172289B7D190038A305 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					23FCA3E028A4DB7900123C2C = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					23FCA3E828A4DB7A00123C2C = {
 						CreatedOnToolsVersion = 13.4.1;
 					};
 				};
@@ -263,6 +473,8 @@
 			targets = (
 				23549172289B7D190038A305 /* Tinytab */,
 				235491A8289BA81E0038A305 /* Tinytab Dev */,
+				23FCA3E028A4DB7900123C2C /* Tinytab Watch Dev */,
+				23FCA3E828A4DB7A00123C2C /* Tinytab Watch Dev WatchKit Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -286,6 +498,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		23FCA3DF28A4DB7900123C2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23FCA3E428A4DB7A00123C2C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23FCA3E728A4DB7A00123C2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23FCA3F828A4DB7B00123C2C /* Preview Assets.xcassets in Resources */,
+				23FCA3F528A4DB7B00123C2C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -294,11 +523,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				23E3B6BC289C69EE005B9D74 /* HomeTableDataSource.swift in Sources */,
+				23FCA9AF28A4FC8400AC006A /* HomeView.swift in Sources */,
 				2354918D289B7E8D0038A305 /* HomeViewController.swift in Sources */,
 				2354918B289B7D8C0038A305 /* LoginViewController.swift in Sources */,
 				235491A2289B8FE50038A305 /* LoginResponse.swift in Sources */,
 				23549195289B86050038A305 /* LoginFormController.swift in Sources */,
 				23549197289B8A5C0038A305 /* UIColor+Ext.swift in Sources */,
+				23FCA41C28A4E24B00123C2C /* WatchConnectivityManager.swift in Sources */,
 				235491A7289BA4B20038A305 /* User.swift in Sources */,
 				23549177289B7D190038A305 /* AppDelegate.swift in Sources */,
 				23549179289B7D190038A305 /* SceneDelegate.swift in Sources */,
@@ -313,11 +544,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				23E3B6BD289C69EE005B9D74 /* HomeTableDataSource.swift in Sources */,
+				23FCA9B028A4FCD500AC006A /* HomeView.swift in Sources */,
 				235491AA289BA81E0038A305 /* HomeViewController.swift in Sources */,
 				235491AB289BA81E0038A305 /* LoginViewController.swift in Sources */,
 				235491AC289BA81E0038A305 /* LoginResponse.swift in Sources */,
 				235491AD289BA81E0038A305 /* LoginFormController.swift in Sources */,
 				235491AE289BA81E0038A305 /* UIColor+Ext.swift in Sources */,
+				23FCA41D28A4E66500123C2C /* WatchConnectivityManager.swift in Sources */,
 				235491AF289BA81E0038A305 /* User.swift in Sources */,
 				235491B0289BA81E0038A305 /* AppDelegate.swift in Sources */,
 				235491B1289BA81E0038A305 /* SceneDelegate.swift in Sources */,
@@ -327,7 +560,36 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		23FCA3E528A4DB7A00123C2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23FCA40E28A4DC5800123C2C /* LandingView.swift in Sources */,
+				23FCA41128A4DC5800123C2C /* TabsView.swift in Sources */,
+				23FCA3F128A4DB7A00123C2C /* TinytabApp.swift in Sources */,
+				23FCA40F28A4DC5800123C2C /* HomeView.swift in Sources */,
+				23FCA41E28A4E66A00123C2C /* WatchConnectivityManager.swift in Sources */,
+				23FCA41928A4DE3200123C2C /* PaymentCodeView.swift in Sources */,
+				23FCA41028A4DC5800123C2C /* TabsDetail.swift in Sources */,
+				23FCA3F328A4DB7A00123C2C /* ComplicationController.swift in Sources */,
+				23FCA41228A4DC5800123C2C /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		23FCA3EC28A4DB7A00123C2C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 23FCA3E828A4DB7A00123C2C /* Tinytab Watch Dev WatchKit Extension */;
+			targetProxy = 23FCA3EB28A4DB7A00123C2C /* PBXContainerItemProxy */;
+		};
+		23FCA3FB28A4DB7B00123C2C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 23FCA3E028A4DB7900123C2C /* Tinytab Watch Dev */;
+			targetProxy = 23FCA3FA28A4DB7B00123C2C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		23549181289B7D190038A305 /* LaunchScreen.storyboard */ = {
@@ -566,6 +828,120 @@
 			};
 			name = Release;
 		};
+		23FCA3FE28A4DB7B00123C2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Tinytab Watch Dev WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = RYK6GDE7V9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Tinytab Watch Dev WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Tinytab Watch Dev WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.square.hack.22.femi.rozon.Tinytab.Dev.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Debug;
+		};
+		23FCA3FF28A4DB7B00123C2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Tinytab Watch Dev WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = RYK6GDE7V9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Tinytab Watch Dev WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Tinytab Watch Dev WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.square.hack.22.femi.rozon.Tinytab.Dev.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Release;
+		};
+		23FCA40228A4DB7B00123C2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RYK6GDE7V9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = Tinytab_Watch_Dev_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "Tinytab Watch Dev";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.square.hack.22.femi.rozon.Tinytab.Dev;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.square.hack.22.femi.rozon.Tinytab.Dev.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Debug;
+		};
+		23FCA40328A4DB7B00123C2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RYK6GDE7V9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = Tinytab_Watch_Dev_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "Tinytab Watch Dev";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.square.hack.22.femi.rozon.Tinytab.Dev;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.square.hack.22.femi.rozon.Tinytab.Dev.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -596,6 +972,24 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		23FCA3FD28A4DB7B00123C2C /* Build configuration list for PBXNativeTarget "Tinytab Watch Dev WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23FCA3FE28A4DB7B00123C2C /* Debug */,
+				23FCA3FF28A4DB7B00123C2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		23FCA40128A4DB7B00123C2C /* Build configuration list for PBXNativeTarget "Tinytab Watch Dev" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23FCA40228A4DB7B00123C2C /* Debug */,
+				23FCA40328A4DB7B00123C2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
@@ -621,6 +1015,11 @@
 			productName = EFQRCode;
 		};
 		23FCA3DD28A4D39300123C2C /* EFQRCode */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 23FCA3D628A4CF2800123C2C /* XCRemoteSwiftPackageReference "EFQRCode" */;
+			productName = EFQRCode;
+		};
+		23FCA41328A4DD7300123C2C /* EFQRCode */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 23FCA3D628A4CF2800123C2C /* XCRemoteSwiftPackageReference "EFQRCode" */;
 			productName = EFQRCode;

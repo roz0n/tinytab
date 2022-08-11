@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftUI
 
 final class LoginViewController: UIViewController {
   
@@ -75,7 +76,8 @@ final class LoginViewController: UIViewController {
               fatalError("Failed to obtain scene delegate")
             }
             
-            let homeController = HomeViewController()
+            let homeController = UIHostingController(rootView: HomeView())
+//            let homeController = HomeViewController()
             homeController.navigationItem.title = "tinytab"
             homeController.tabBarItem = UITabBarItem(title: "Home", image: UIImage(systemName: "house.fill"), tag: 0)
             let homeNavigationController = UINavigationController(rootViewController: homeController)
