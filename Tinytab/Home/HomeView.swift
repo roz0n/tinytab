@@ -11,12 +11,21 @@ struct HomeView: View {
   
   @StateObject var connectivity = WatchConnectivityManager()
   
-  func sendMessage() {
+  func transferUserInfo() {
     let data = ["phone": "Hello from the phone!"]
     connectivity.transferUserInfo(data)
   }
   
-  func sendContext() {}
+  func sendMessage() {
+    let data = ["message": "The world is yours..."]
+    connectivity.sendMessage(data)
+  }
+  
+  func sendContext() {
+    let data = ["context": "The iPhone context!"]
+    connectivity.setContext(to: data)
+  }
+  
   func sendFile() {}
   func sendComplication() {}
   
@@ -29,9 +38,15 @@ struct HomeView: View {
         }
         VStack {
           Text(connectivity.receivedTextWatch ?? "")
+          Button("Transfer user info watch", action: transferUserInfo)
+        }
+        VStack {
+          Text(connectivity.receivedMessageResponse ?? "")
           Button("Message watch", action: sendMessage)
         }
-        .padding()
+        VStack {
+          Button("Set new context", action: sendContext)
+        }
       }
       .frame(width: geo.size.width, height: geo.size.height)
     }
