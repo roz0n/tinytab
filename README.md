@@ -13,10 +13,3 @@ This repo adheres to traditional iOS development conventions:
 3. Select the Signing & Capabilities tab.
 4. Change the Team from the dropdown menu to your own.
 5. Build the app: ⌘ + R
-
-## Authors
-
-[@femyeda](https://github.com/femyeda)
-[@roz0n](https://github.com/roz0n)
-
-for the [Square Unboxed Hackathon 2022](https://squareunboxed2022.devpost.com/)
