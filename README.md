@@ -1,5 +1,7 @@
 # tinytab
 
+🏆 Square Unboxed Hackathon: 2022 First Place Winner
+---
 The tinytab watchOS and companion iOS app built with SwiftUI and UIKit respectively.
 
 ## Getting Started
